@@ -1,0 +1,9 @@
+{
+  "github": {
+    "enabled": true,
+    "require_ssl": true
+  },
+  "git": {
+    "git_ignore": true
+  }
+}

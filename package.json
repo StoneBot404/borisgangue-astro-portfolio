@@ -1,0 +1,26 @@
+{
+  "name": "borisgangue-astro-portfolio",
+  "version": "1.0.0",
+  "description": "Boris Gangue's personal website, rebuilt with Astro.",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/tailwind": "^1.0.0",
+    "astro": "^4.0.0",
+    "tailwindcss": "^3.0.0",
+    "three": "^0.160.0" /* For the background effect */
+  },
+  "keywords": [
+    "astro",
+    "portfolio",
+    "tailwind",
+    "blog"
+  ],
+  "author": "Stone Bot",
+  "license": "MIT"
+}
