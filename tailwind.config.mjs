@@ -5,9 +5,7 @@ export default {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        // Add any custom font families here if needed
-      }
+      // Add any custom font families here if needed
     },
   },
   plugins: [],

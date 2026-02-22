@@ -1,0 +1,34 @@
+---
+layout: ../layouts/base.astro
+title: "From Chatbot to Digital Partner: My Experiment with OpenClaw"
+date: 2026-02-20
+readingTime: 5
+tags: ["AI", "Experiment", "Automation", "OpenClaw", "Stone Bot"]
+---
+
+We’ve all grown used to the standard back-and-forth with AI like ChatGPT. You ask a question, it gives an answer. It's useful, but it’s <em>passive</em>. I wanted to see what happens when the AI can actually leave the chat window and interact with the real world—touching files, running code, and negotiating with other software.
+
+That’s the promise of [OpenClaw](https://docs.openclaw.ai), "The AI that actually does things," and I decided to put it to the test.
+
+I started by turning an old HP ProDesk (i3, 32 GB RAM) into a local Linux server. I wanted this intelligence to live on my own hardware, not just in the cloud. This gave me a secure sandbox where the agent—whom I named **Stone Bot**—could have deep system access without compromising my main computer. I hooked him up to **Discord**, turning a simple chat app into a command line for my new digital coworker.
+
+My first real attempt to put Stone to work was automating my search for an apprenticeship. I thought I could just say "find me jobs," but it was a harsh reality check. We spent hours fighting with Notion’s API because Stone, running blindly on my server, couldn't see that the documentation had changed.
+
+I had to be his eyes, feeding him error logs and API keys. It was frustrating, but it taught me that <strong>agentic AI isn't magic; it’s a collaboration</strong>. When standard tools failed due to GDPR blocks on job sites, we pivoted to using [Firecrawl](https://www.firecrawl.dev/) to scrape web data directly. It wasn't perfect immediately, but we built a working pipeline that now logs opportunities for me automatically.
+
+Things got really interesting when I asked Stone to build a Snake game just to test his coding speed. In less than three minutes, he didn't just write the HTML and JavaScript; he acted like a <strong>DevOps engineer</strong>.
+
+He realized my server was hidden inside a VirtualBox machine—effectively a soundproof room that the outside world couldn't reach. Without me asking, he:
+* Dockerized the app to make it portable.
+* Deployed a [Cloudflare Tunnel](https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/) to create a secure, public link.
+
+When I opened it on my phone, I realized he had even added <strong>touch controls</strong> because he anticipated I might not be on a desktop. That was the moment it clicked: he understood the <em>context</em> of how I would use the app, not just the code required to build it.
+
+👉 <strong>Play the game here:</strong> <a href="https://stonebot404.github.io/stone-snake-edition/">Stone Snake Edition</a><br>
+👉 <strong>Check the code:</strong> <a href="https://github.com/StoneBot404/stone-snake-game">GitHub Repository</a>
+
+The final test was giving Stone the ability to "see" the web. I realized he was limited without a search subscription, so he suggested we self-host our own search engine, <strong>SearxNG</strong>.
+
+With this new tool, I sent him on a detective mission to find a friend's email address. He scanned LinkedIn, identified that my friend was a student at my school (ISEN Brest), and used <strong>deductive reasoning</strong> to construct the correct email format based on the school's patterns. He then wrote a Python script to generate a PDF report of our work and emailed it out autonomously.
+
+This experiment proved to me that we are entering a new era. Stone Bot isn't just a chatbot anymore; he’s a presence on my server that monitors my costs, hosts my projects, and helps me research. It requires technical knowledge to guide him when he gets stuck, but the payoff is having a personalized, private extension of my own capabilities that works even when I'm asleep.
